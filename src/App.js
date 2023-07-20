@@ -1,12 +1,18 @@
 import './App.css';
 import ToDoList from "./ToDoList";
-function App() {
+
+const todos = [
+  'Have Fun',
+  'Learn React',
+  'Learn the MERN-stack'
+];
+
+export default function App() {
   return (
     <div className="App">
       <h1>React To-Do</h1>
-      <ToDoList />
+      <ToDoList todos={todos} />
     </div>
   );
 }
 
-export default App;

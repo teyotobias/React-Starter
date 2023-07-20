@@ -1,7 +1,14 @@
-function ToDoListItem() {
+import "./ToDoListItem.css";
+
+export default function ToDoListItem({ todo, index }) {
     return (
-        <li>To Do Item</li>
+        <li
+         className="ToDoListItem"
+         style={{
+            backgroundColor: index % 2 ? "lavender" : "plum"
+         }}
+        >
+            {todo}
+        </li>
     );
 }
-
-export default ToDoListItem;
